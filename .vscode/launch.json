@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "go",
+      "request": "launch",
+      "name": "Launch Program",
+      "mode": "auto",
+      "program": "${workspaceFolder}/${input:programPath}",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "stopOnEntry": false,
+      "showLog": true
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "programPath",
+      "description": "Path to the program folder or Go file to debug"
+    }
+  ]
+}
